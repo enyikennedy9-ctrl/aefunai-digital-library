@@ -1,179 +1,648 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Browse Books - AE-FUNAI Digital Library</title>
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="leQdKxveLQ-msNHnK0A49Wn6_EqOcwn_fnXJ99htIts">
+    <title>Browse Books - AE-FUNAI Digital Library</title>
+    <meta name="description" content="Browse textbooks and learning resources from AE-FUNAI Digital Library. Select your faculty and department to find trusted course materials. by Enyi Kennedy Tochukwu">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="logo-area"> <img src="images/funai-logo.webp" alt="AE-FUNAI Logo"> <h2>AE-FUNAI</h2>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="books.html">Browse</a>
-            <a href="login.html" class="btn-dark">Login</a>
-        </nav>
-    </header>
-    <section class="section">
-            <h2>Browse by Faculty</h2>
-            <p>Select your faculty to see departments and textbooks.</p>
-        <div class="search-bar"><input type="text" placeholder="Search the book by title, course code..."></div>
-        <div class="faculty-grid">
-        <div class="faculty-card">
-            <h3>Faculty of Science</h3>
+
+<body id="top">
+
+<header>
+    <div class="logo-area">
+        <img src="funai-logo.webp" alt="AE-FUNAI Logo">
+        <h2>AE-FUNAI</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Browse</a>
+        <a href="login.html" class="btn-dark">Login</a>
+    </nav>
+</header>
+
+<!-- FACULTY SELECTION -->
+<section class="section" id="browse-faculties">
+    <h2>Browse by Faculty</h2>
+    <p>Select a faculty to see its available departments.</p>
+
+    <div class="faculty-grid">
+
+        <a href="#science-departments" class="faculty-card">
+            <h3>Faculty of Sciences</h3>
             <p>Computer Science, Mathematics, Physics, Biology, Chemistry</p>
-        </div>
+        </a>
 
-        <div class="faculty-card">
-            <h3>Faculty of Engineering</h3>
-            <p>Civil, Mechanical, Electrical, Chemical Engineering</p>
-        </div>
-
-        <div class="faculty-card">
+        <a href="#social-departments" class="faculty-card">
             <h3>Faculty of Social Sciences</h3>
             <p>Economics, Sociology, Psychology, Political Science</p>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a href="#humanities-departments" class="faculty-card">
             <h3>Faculty of Humanities</h3>
             <p>English, History, Philosophy, Linguistics</p>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a href="#management-departments" class="faculty-card">
             <h3>Faculty of Management Sciences</h3>
             <p>Accounting, Business Administration, Banking and Finance</p>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a href="#agriculture-departments" class="faculty-card">
             <h3>Faculty of Agriculture</h3>
             <p>Agricultural Science, Animal Science, Crop Science</p>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a href="#education-departments" class="faculty-card">
             <h3>Faculty of Education</h3>
             <p>Educational Foundations, Science Education</p>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a href="#law-departments" class="faculty-card">
             <h3>Faculty of Law</h3>
             <p>Public Law, Private Law</p>
-        </div>
-        </div>
-    </section>
+        </a>
 
+    </div>
+</section>
 
-    <section class="section">
-            <h2>Faculty of Science</h2>
-            <p><strong>Department of Computer Science</strong></p>
-        <div class="book-grid">
+<!-- FACULTY OF SCIENCE DEPARTMENTS -->
+<section id="science-departments" class="section">
+    <h2>Faculty of Sciences</h2>
+    <p>Select your department to explore available textbooks.</p>
+
+    <div class="faculty-grid">
+
+        <a href="#computer-science-books" class="faculty-card">
+            <h3>Computer Science</h3>
+            <p>Explore Computer Science textbooks</p>
+        </a>
+
+        <a href="#mathematics-books" class="faculty-card">
+            <h3>Mathematics</h3>
+            <p>Explore Mathematics textbooks</p>
+        </a>
+
+        <a href="#physics-books" class="faculty-card">
+            <h3>Physics</h3>
+            <p>Explore Physics textbooks</p>
+        </a>
+
+    </div>
+
+    <a href="#browse-faculties">Back to Faculties</a>
+</section>
+
+<!-- COMPUTER SCIENCE BOOKS -->
+<section id="computer-science-books" class="section">
+    <h2>Faculty of Sciences</h2>
+    <p><strong>Department of Computer Science</strong></p>
+
+    <div class="book-grid">
+
         <div class="book-card green">
-            <div><h3>Fundamentals of Computer Science</h3>
-                <p>Author: Brookshear & Brylow</p><p>CSC 101</p>
+            <div>
+                <h3>Fundamentals of Computer Science</h3>
+                <p>Author: Brookshear &amp; Brylow</p>
+                <p>CSC 101</p>
             </div>
             <a href="#">View Book</a>
         </div>
 
         <div class="book-card purple">
-            <div><h3>Programming Fundamentals</h3>
+            <div>
+                <h3>Programming Fundamentals</h3>
                 <p>Author: K. N. King</p>
                 <p>CSC 102</p>
             </div>
             <a href="#">View Book</a>
         </div>
 
-        <div class="book-card blue"><div><h3>Data Structures Study Guide</h3><p>Author: Mark Allen Weiss</p><p>CSC 201</p></div><a href="#">View Book</a></div>
-        <div class="book-card darkgreen"><div><h3>Introduction to Big Data</h3><p>Author: Thomas Erl</p><p>CSC 301</p></div><a href="#">View Book</a></div>
-        </div>
-    </section>
-    <section class="section">
-            <h2>Faculty of Science</h2>
-            <p><strong>Department of Mathematics</strong></p>
-            <p>Books for Mathematics</p>
-        <div class="book-grid">
-        <div class="book-card brown"><div><h3>Calculus Early Transcendentals</h3><p>Author: James Stewart</p><p>Mathematics | MTH 101</p></div><a href="#">View Book</a></div>
-        <div class="book-card red"><div><h3>Introduction to Statistics</h3><p>Author: Mario Triola</p><p>Mathematics | STA 101</p></div><a href="#">View Book</a></div>
-        <div class="book-card blue"><div><h3>Elementary Mathematics I</h3><p>Author: A. O. Kola</p><p>Mathematics | MTH 102</p></div><a href="#">View Book</a></div>
-        <div class="book-card green"><div><h3>Linear Algebra</h3><p>Author: Gilbert Strang</p><p>Mathematics | MTH 201</p></div><a href="#">View Book</a></div>
-        </div>
-    </section>
-    <section class="section">
-            <h2>Faculty of Science</h2>
-            <p><strong>Department of Physics</strong></p>
-        <div class="book-grid">
         <div class="book-card blue">
-            <div><h3>University Physics Volume 1</h3>
-                <p>Author: Young & Freedman</p>
-                <p>Physics | PHY 101</p></div>
-                <a href="#">View Book</a>
-                </div>
-
-        <div class="book-card purple">
-        <div><h3>University Physics Volume 2</h3>
-        <p>Author: Young & Freedman</p><p>Physics | PHY 102</p>
+            <div>
+                <h3>Data Structures Study Guide</h3>
+                <p>Author: Mark Allen Weiss</p>
+                <p>CSC 201</p>
+            </div>
+            <a href="#">View Book</a>
         </div>
-        <a href="#">View Book</a>
+
+        <div class="book-card darkgreen">
+            <div>
+                <h3>Introduction to Big Data</h3>
+                <p>Author: Thomas Erl</p>
+                <p>CSC 301</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
     </div>
+
+    <a href="#science-departments">Back to Science Departments</a>
+</section>
+
+<!-- MATHEMATICS BOOKS -->
+<section id="mathematics-books" class="section">
+    <h2>Faculty of Sciences</h2>
+    <p><strong>Department of Mathematics</strong></p>
+    <p>Books for Mathematics</p>
+
+    <div class="book-grid">
+
+        <div class="book-card brown">
+            <div>
+                <h3>Calculus Early Transcendentals</h3>
+                <p>Author: James Stewart</p>
+                <p>Mathematics | MTH 101</p>
+            </div>
+            <a href="#">View Book</a>
         </div>
 
-    </section>
-    <section class="section">
-            <h2>Faculty of Social Sciences</h2>
-            <p><strong>Department of Economics</strong></p>
-        <div class="book-grid">
-        <div class="book-card purple">
-            <div><h3>Fundamentals of Economics</h3>
-                <p>Author: N. Gregory Mankiw</p><p>Economics | ECO 101</p>
+        <div class="book-card red">
+            <div>
+                <h3>Introduction to Statistics</h3>
+                <p>Author: Mario Triola</p>
+                <p>Mathematics | STA 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card blue">
+            <div>
+                <h3>Elementary Mathematics I</h3>
+                <p>Author: A. O. Kola</p>
+                <p>Mathematics | MTH 102</p>
             </div>
             <a href="#">View Book</a>
         </div>
 
         <div class="book-card green">
-            <div><h3>Principles of Microeconomics</h3>
+            <div>
+                <h3>Linear Algebra</h3>
+                <p>Author: Gilbert Strang</p>
+                <p>Mathematics | MTH 201</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+    </div>
+
+    <a href="#science-departments">Back to Science Departments</a>
+</section>
+
+<!-- PHYSICS BOOKS -->
+<section id="physics-books" class="section">
+    <h2>Faculty of Sciences</h2>
+    <p><strong>Department of Physics</strong></p>
+
+    <div class="book-grid">
+
+        <div class="book-card blue">
+            <div>
+                <h3>University Physics Volume 1</h3>
+                <p>Author: Young &amp; Freedman</p>
+                <p>Physics | PHY 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card purple">
+            <div>
+                <h3>University Physics Volume 2</h3>
+                <p>Author: Young &amp; Freedman</p>
+                <p>Physics | PHY 102</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+    </div>
+
+    <a href="#science-departments">Back to Science Departments</a>
+</section>
+
+<!-- SOCIAL SCIENCES DEPARTMENTS -->
+<section id="social-departments" class="section">
+    <h2>Faculty of Social Sciences</h2>
+    <p>Select a department to explore its textbooks.</p>
+
+    <div class="faculty-grid">
+        <a href="#economics-books" class="faculty-card">
+            <h3>Economics</h3>
+            <p>Explore Economics textbooks</p>
+        </a>
+    </div>
+
+    <a href="#browse-faculties">Back to Faculties</a>
+</section>
+
+<!-- ECONOMICS BOOKS -->
+<section id="economics-books" class="section">
+    <h2>Faculty of Social Sciences</h2>
+    <p><strong>Department of Economics</strong></p>
+
+    <div class="book-grid">
+
+        <div class="book-card purple">
+            <div>
+                <h3>Fundamentals of Economics</h3>
+                <p>Author: N. Gregory Mankiw</p>
+                <p>Economics | ECO 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card green">
+            <div>
+                <h3>Principles of Microeconomics</h3>
                 <p>Author: Mankiw</p>
                 <p>Economics | ECO 102</p>
             </div>
-            <a href="#">View Book</a></div>
-        </div>
-
-    </section>
-    <section class="section">
-        <h2>Continue discovering</h2>
-            <p>Based on what students are reading</p>
-        <div class="book-grid">
-    <div class="book-card blue">
-        <div><h3>University Physics</h3>
-            <p>Physics | PHY 101</p></div>
             <a href="#">View Book</a>
         </div>
-     <div class="book-card red">
-        <div><h3>Introduction to Statistics</h3>
-            <p>Mathematics | STA 101</p>
+
+    </div>
+
+    <a href="#social-departments">Back to Social Sciences Departments</a>
+</section>
+
+<!-- MANAGEMENT SCIENCES DEPARTMENTS -->
+<section id="management-departments" class="section">
+    <h2>Faculty of Management Sciences</h2>
+    <p>Select a department.</p>
+
+    <div class="faculty-grid">
+        <a href="#accounting-books" class="faculty-card">
+            <h3>Accounting</h3>
+            <p>Explore Accounting textbooks</p>
+        </a>
+    </div>
+
+    <a href="#browse-faculties">Back to Faculties</a>
+</section>
+
+<!-- ACCOUNTING BOOKS -->
+<section id="accounting-books" class="section">
+    <h2>Faculty of Management Sciences</h2>
+    <p><strong>Department of Accounting</strong></p>
+
+    <div class="book-grid">
+
+        <div class="book-card green">
+            <div>
+                <h3>Financial Accounting</h3>
+                <p>Author: Jerry J. Weygandt</p>
+                <p>Accounting | ACC 101</p>
+            </div>
+            <a href="#">View Book</a>
         </div>
-        <a href="#">View Book</a>
+
+        <div class="book-card purple">
+            <div>
+                <h3>Managerial Accounting</h3>
+                <p>Author: Ray H. Garrison</p>
+                <p>Accounting | ACC 102</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card blue">
+            <div>
+                <h3>Intermediate Accounting</h3>
+                <p>Author: Donald E. Kieso</p>
+                <p>Accounting | ACC 201</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card brown">
+            <div>
+                <h3>Advanced Accounting</h3>
+                <p>Author: Joe Ben Hoyle</p>
+                <p>Accounting | ACC 301</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
     </div>
 
-         <div class="book-card purple"><div><h3>Fundamentals of Economics</h3><p>Economics | ECO 101</p></div><a href="#">View Book</a></div>
-        <div class="book-card green"><div><h3>Introduction to Big Data</h3><p>Computer Science | CSC 301</p></div><a href="#">View Book</a></div>
+    <a href="#management-departments">Back to Management Departments</a>
+</section>
+
+<!-- AGRICULTURE DEPARTMENTS -->
+<section id="agriculture-departments" class="section">
+    <h2>Faculty of Agriculture</h2>
+    <p>Select a department.</p>
+
+    <div class="faculty-grid">
+        <a href="#agricultural-science-books" class="faculty-card">
+            <h3>Agricultural Science</h3>
+            <p>Explore Agricultural Science textbooks</p>
+        </a>
     </div>
 
-     </section>
-    <section class="section">
-            <h2>Frequently used by students</h2>
-            <p>Most accessed textbooks this semester</p>
-        <div class="book-grid">
-        <div class="book-card green"><div><h3>Fundamentals of Computer Science</h3><p>Computer Science | CSC 101</p></div><a href="#">View Book</a></div>
-        <div class="book-card purple"><div><h3>Programming Fundamentals</h3><p>Computer Science | CSC 102</p></div><a href="#">View Book</a></div>
-        <div class="book-card blue"><div><h3>Data Structures Study Guide</h3><p>Computer Science | CSC 201</p></div><a href="#">View Book</a></div>
-        <div class="book-card brown"><div><h3>Calculus Early Transcendentals</h3><p>Mathematics | MTH 101</p></div><a href="#">View Book</a></div>
-        </div>
-    </section>
-    <footer>
-        <div><h3>AE-FUNAI Digital Library</h3><p>Alex Ekwueme Federal University<br>Ndufu-Alike, Ebonyi State</p></div>
-        <div><h3>Library</h3><a href="books.html">Browse Books</a><a href="books.html">Browse by Faculty</a><a href="login.html">Login</a></div>
-        <div><h3>About</h3><a href="index.html">About Project</a><a href="index.html">How it Works</a><a href="index.html">FAQ</a></div>
-        <div><h3>Contact</h3><p>University Library<br>AE-FUNAI, Ebonyi State<br>library@funai.edu.ng</p></div>
-        </footer>
+    <a href="#browse-faculties">Back to Faculties</a>
+</section>
+
+<!-- AGRICULTURE BOOKS -->
+<section id="agricultural-science-books" class="section">
+    <h2>Faculty of Agriculture</h2>
+    <p><strong>Department of Agricultural Science</strong></p>
+
+    <div class="book-grid">
+
+        <div class="book-card green">
+            <div>
+                <h3>Introduction to Agriculture</h3>
+                <p>Author: John Doe</p>
+                <p>Agriculture | AGR 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card purple">
+            <div>
+                <h3>Animal Science Basics</h3>
+                <p>Author: Jane Smith</p>
+                <p>Agriculture | AGR 102</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card blue">
+            <div>
+                <h3>Crop Science Fundamentals</h3>
+                <p>Author: Richard Roe</p>
+                <p>Agriculture | AGR 201</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card brown">
+            <div>
+                <h3>Agricultural Economics</h3>
+                <p>Author: Emily Davis</p>
+                <p>Agriculture | AGR 301</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+    </div>
+
+    <a href="#agriculture-departments">Back to Agriculture Departments</a>
+</section>
+
+<!-- EDUCATION DEPARTMENTS -->
+<section id="education-departments" class="section">
+    <h2>Faculty of Education</h2>
+    <p>Select a department.</p>
+
+    <div class="faculty-grid">
+        <a href="#educational-foundations-books" class="faculty-card">
+            <h3>Educational Foundations</h3>
+            <p>Explore Educational Foundations textbooks</p>
+        </a>
+    </div>
+
+    <a href="#browse-faculties">Back to Faculties</a>
+</section>
+
+<!-- EDUCATION BOOKS -->
+<section id="educational-foundations-books" class="section">
+    <h2>Faculty of Education</h2>
+    <p><strong>Department of Educational Foundations</strong></p>
+
+    <div class="book-grid">
+
+        <div class="book-card green">
+            <div>
+                <h3>Foundations of Education</h3>
+                <p>Author: Michael Johnson</p>
+                <p>Education | EDU 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card purple">
+            <div>
+                <h3>Science Education Principles</h3>
+                <p>Author: Sarah Lee</p>
+                <p>Education | EDU 102</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card blue">
+            <div>
+                <h3>Educational Psychology</h3>
+                <p>Author: David Brown</p>
+                <p>Education | EDU 201</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card brown">
+            <div>
+                <h3>Curriculum Development</h3>
+                <p>Author: Laura Wilson</p>
+                <p>Education | EDU 301</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+    </div>
+
+    <a href="#education-departments">Back to Education Departments</a>
+</section>
+
+<!-- HUMANITIES -->
+<section id="humanities-departments" class="section">
+    <h2>Faculty of Humanities</h2>
+    <p>Department textbook collections will be added here.</p>
+    <a href="#browse-faculties">Back to Faculties</a>
+</section>
+
+<!-- LAW DEPARTMENTS -->
+<section id="law-departments" class="section">
+    <h2>Faculty of Law</h2>
+    <p>Select a department.</p>
+
+    <div class="faculty-grid">
+        <a href="#law-books" class="faculty-card">
+            <h3>Department of Law</h3>
+            <p>Explore Law textbooks</p>
+        </a>
+    </div>
+
+    <a href="#browse-faculties">Back to Faculties</a>
+</section>
+
+<!-- LAW BOOKS -->
+<section id="law-books" class="section">
+    <h2>Faculty of Law</h2>
+    <p><strong>Department of Law</strong></p>
+
+    <div class="book-grid">
+
+        <div class="book-card green">
+            <div>
+                <h3>Introduction to Law</h3>
+                <p>Author: William Taylor</p>
+                <p>Law | LAW 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card purple">
+            <div>
+                <h3>Public Law Principles</h3>
+                <p>Author: Elizabeth Martinez</p>
+                <p>Law | LAW 102</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card blue">
+            <div>
+                <h3>Private Law Essentials</h3>
+                <p>Author: Christopher Anderson</p>
+                <p>Law | LAW 201</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card brown">
+            <div>
+                <h3>Constitutional Law</h3>
+                <p>Author: Patricia Thomas</p>
+                <p>Law | LAW 301</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+    </div>
+
+    <a href="#law-departments">Back to Law Departments</a>
+</section>
+
+<!-- CONTINUE DISCOVERING -->
+<section class="section">
+    <h2>Continue discovering</h2>
+    <p>Based on what students are reading</p>
+
+    <div class="book-grid">
+
+        <div class="book-card blue">
+            <div>
+                <h3>University Physics</h3>
+                <p>Physics | PHY 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card red">
+            <div>
+                <h3>Introduction to Statistics</h3>
+                <p>Mathematics | STA 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card purple">
+            <div>
+                <h3>Fundamentals of Economics</h3>
+                <p>Economics | ECO 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card green">
+            <div>
+                <h3>Introduction to Big Data</h3>
+                <p>Computer Science | CSC 301</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FREQUENTLY USED BOOKS -->
+<section class="section">
+    <h2>Frequently used by students</h2>
+    <p>Most accessed textbooks this semester</p>
+
+    <div class="book-grid">
+
+        <div class="book-card green">
+            <div>
+                <h3>Fundamentals of Computer Science</h3>
+                <p>Computer Science | CSC 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card purple">
+            <div>
+                <h3>Programming Fundamentals</h3>
+                <p>Computer Science | CSC 102</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card blue">
+            <div>
+                <h3>Data Structures Study Guide</h3>
+                <p>Computer Science | CSC 201</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+        <div class="book-card brown">
+            <div>
+                <h3>Calculus Early Transcendentals</h3>
+                <p>Mathematics | MTH 101</p>
+            </div>
+            <a href="#">View Book</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div>
+        <h3>AE-FUNAI Digital Library</h3>
+        <p>Alex Ekwueme Federal University<br>
+        Ndufu-Alike, Ebonyi State</p>
+    </div>
+
+    <div>
+        <h3>Library</h3>
+        <a href="books.html">Browse Books</a>
+        <a href="books.html#browse-faculties">Browse by Faculty</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <div>
+        <h3>About</h3>
+        <a href="index.html">About Project</a>
+        <a href="index.html">How it Works</a>
+        <a href="index.html">FAQ</a>
+    </div>
+
+    <div>
+        <h3>Contact</h3>
+        <p>University Library<br>
+        AE-FUNAI, Ebonyi State<br>
+        library@funai.edu.ng</p>
+    </div>
+
+</footer>
+
 </body>
 </html>
